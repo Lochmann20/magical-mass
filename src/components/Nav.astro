@@ -7,23 +7,42 @@
     <ul>
       <li class="medlemKanp"><a href="/">Bliv medlem</a></li>
       <li><a href="/">Mit CA</a></li>
-      <a class="hamburger" href="/">X</a>
+      <!--<a class="hamburger" href="/">X</a>-->
+    </ul>
+  </nav>
+
+  <button class="hamburger">
+    <div class="bar"></div>
+  </button>
+
+  <nav class="open-menu">
+    <ul>
+      <li><a href="/">I job</a></li>
+      <li><a href="/">Studerende</a></li>
+      <li><a href="/">Nyuddannet</a></li>
+      <li><a href="/">Selvstændig</a></li>
+      <li><a href="/">Ledig</a></li>
+      <li><a href="/">Efterløn</a></li>
+
+
     </ul>
   </nav>
 </header>
 
 <style>
+.main-menu{
+  margin-left: 25rem;
+}
   .img {
     width: 250px;
     margin-left: 5rem;
   }
 
-  .nav{
-    display: flex;/* på linje med img*/
+  .nav {
+    display: flex; /* på linje med img*/
     justify-content: space-between;
     align-items: center;
     margin-right: 5rem;
-
   }
 
   .nav li {
@@ -33,9 +52,9 @@
   .nav a {
     text-decoration: none;
     color: #054674;
-    font-family: 'open sans';
+    font-family: "open sans";
   }
-  .medlemKanp a{
+  .medlemKanp a {
     background-color: #054674;
     color: white;
     padding: 1rem;
@@ -49,4 +68,95 @@
     color: #054674;
     border: 2px solid #054674;
   }
+
+  /* Burgermenu */
+
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 40px; /* bredden på stregerne  */
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%; /* breden på stregerne */
+    height: 4px; /* tykkelsen på stregerne */
+    background-color: #054674; /* farven på stregerne */
+    margin: 5px -10px; /* den første afgør margin top og nr 2 afgør margin left */
+    transition: 0.4s;
+  }
+  .hamburger.is-active:before {
+    transform: rotate(-50deg) translate(-8px, 4px);
+    position: relative;
+    z-index: 100;
+  }
+
+  .hamburger.is-active:after {
+    transform: rotate(50deg) translate(-8px, -5px);
+    position: relative;
+    z-index: 100;
+  }
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+
+  .open-menu {
+    position: fixed;
+    top: 0; /* vigtig */
+    left: 100%; /* hvor meget af skærmen den fylder. jo mindre procent jo mere kan den ses på skærmen */
+    width: 100%; /* hvor meget boksen fylder */
+    min-height: 100vh; /* hvis man fjerner denne, så fylder den ikke hele skærmen */
+    display: block; 
+    z-index: 98;
+    background-color: #e6e6dfed;
+    padding-top: 8rem; /* tesktens placering ift toppen */
+    transition: 0.4s;
+
+  }
+
+  .open-menu.is-active {
+    left: 0;
+  }
+
+  .open-menu a {
+    display: block;
+    /*width: 100%;*/
+    /*max-width: 200px;*/
+    /*margin: 0 auto 16px;*/
+    /*text-align: center;*/
+    /*padding: 12px 16px;*/
+    color: #000000;
+    /*text-decoration: none;*/
+    font-family: "open sans";
+    font-weight: 500;
+    font-size: x-large;
+  }
+
+  .open-menu a {
+    transition: transform 0.2 ease;
+  }
+
+  .open-menu a:hover {
+    transform: scale(1.1);
+  }
 </style>
+
+<script>
+  const menu_btn = document.querySelector(".hamburger");
+  const open_menu = document.querySelector(".open-menu");
+
+  menu_btn.addEventListener("click", function () {
+    menu_btn.classList.toggle("is-active");
+    open_menu.classList.toggle("is-active");
+  });
+</script>
