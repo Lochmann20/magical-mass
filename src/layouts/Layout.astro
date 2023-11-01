@@ -4,6 +4,7 @@ import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 
 
+
 ---
 
 <!doctype html>
@@ -22,13 +23,9 @@ import Footer from "../components/Footer.astro";
 
   </head>
   <body>
+    <Nav />
     <slot />
     <!-- slot er alt indhold fra pages -->
-  </body>
-</html>
-    <Nav />
-      <slot />
-      <!-- slot er alt indhold fra pages -->
       <Footer />
-
+    </body>
 </html>
