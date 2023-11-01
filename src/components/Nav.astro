@@ -1,0 +1,53 @@
+<header class="nav">
+  <a class="logo" href="/">
+    <img class="img" src="/CA_Logo_2021_vertikal_DK_RGB.png" alt="logo" />
+  </a>
+
+  <nav class="main-menu">
+    <ul>
+      <li class="medlemKanp"><a href="/">Bliv medlem</a></li>
+      <li><a href="/">Mit CA</a></li>
+      <a class="hamburger" href="/">X</a>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .img {
+    width: 200px;
+  }
+
+  .nav{
+    display: flex;/* på linje med img*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem; /* ? */
+
+  }
+
+  .nav li {
+    display: inline-block; /* på linje */
+    margin: 3rem;
+
+  }
+
+
+
+  .nav a {
+    text-decoration: none;
+    color: #054674;
+    font-family: 'open sans';
+  }
+
+  .medlemKanp a{
+    background-color: #054674;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .medlemKanp:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+</style>
