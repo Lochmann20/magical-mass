@@ -1,12 +1,12 @@
 <article class="grid_1-1">
-  <section class="gridItem">
+  <section class="gridItem_1">
     <h1>
       Er der gået ged i din computer? Vi står klar til at hjælpe dig
     </h1>
     <p>*CA tilbyder billig elektronikdækning ved køb af indboforsikring</p>
   </section>
 
-  <section class="gridItem">
+  <section class="gridItem_2">
     <img class="img" src="/lcd-screen-with-cracked-glass-effect.jpg" alt="logo"/>
   </section>
 </article>
@@ -15,6 +15,8 @@
     <source src="movie.mp4" type="video/mp4">
   </video>
 
+
+<article class="grid_1-1-1">
   <div class="circle_1">
     <h1>Indboforsikring </h1>
     <h2>95 kr./md.*</h2>
@@ -35,55 +37,64 @@
       -tilvalg til indboforsikring</p>
   </div>
 
-
+</article>
 
 
 <style>
-.grid_1-1{
+  .grid_1-1{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: #0A79AE;
+      padding: 5rem;
+      color: white;
+      margin: 15rem;
+      margin-top: 5rem;
+  }
+  .grid_1-1-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #0A79AE;
-    padding: 5rem;
-    color: white;
-    margin: 15rem;
-    margin-top: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center; 
   }
 
+
   img{
-    width: 200px;
+    width: 500px;
+    height: 300px;
+    padding: 5px;
+      
   }
 
   .circle_1 {
-  width: 200px;
-  height: 200px;
-  line-height: 500px;
-  border-radius: 50%;
-  font-size: 10px;
-  color: #fff;
-  text-align: center;
-  background: #3F8367
+    width: 275px;
+    height: 275px;
+    line-height: 500px;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    background: #3F8367
   }
 
   .circle_2 {
-  width: 200px;
-  height: 200px;
-  line-height: 500px;
-  border-radius: 50%;
-  font-size: 10px;
-  color: #fff;
-  text-align: center;
-  background: #8C7300
+    width: 275px;
+    height: 275px;
+    line-height: 500px;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    background: #8C7300
   }
 
   .circle_3 {
-  width: 200px;
-  height: 200px;
-  line-height: 500px;
-  border-radius: 50%;
-  font-size: 10px;
-  color: #fff;
-  text-align: center;
-  background: #D54141
+    width: 275px;
+    height: 275px;
+    line-height: 500px;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    background: #D54141
   }
 
 </style>
