@@ -1,63 +1,52 @@
-<footer>
+
   <article class="grid_1-1-1">
-    <section class="gridItem">
+    <div>
       <ul>
         <li>Om os</li>
         <li>Kontakt</li>
         <li>Find os</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="gridItem">
+
+    <div>
       <p class="info">Telefon i hverdagene 8.30-15.00</p>
       <p class="tlfNr">33149045</p>
-    </section>
+    </div>
 
-    <section class="gridItem">
+    <div>
       <img class="logoBlue" src="/CA_logo_blue.png.png" alt="" />
-    </section>
+    </div>
   </article>
 
   <article class="grid_1-1-1-1">
-    <section class="gridItem">
       <p>Persondatapolitik</p>
-    </section>
-
-    <section class="gridItem">
       <p>Cookiepolitik</p>
-    </section>
-
-    <section class="gridItem">
       <p>Tilgængelighedserklæring</p>
-    </section>
-
-    <section class="gridItem">
       <p>Persondatapolitik</p>
-    </section>
   </article>
-</footer>
+
 
 <style>
   .grid_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
     font-family: "open sans";
-    margin-left: 5rem;
+    margin-top: 2em;
   }
 
   .grid_1-1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-family: "open sans";
-    margin-left: 7rem;
-    margin-top: 7rem;
-    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "open sans"; 
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 
   .logoBlue {
     width: 150px;
-    margin-left: 7rem;
+
   }
 
 .info{
@@ -68,8 +57,31 @@
     font-size: xx-large;
     font-weight: 600;
     margin-left: 6rem;
+}
 
 
+@media screen and (max-width: 450px) {
+  .tlfNr{
+    font-size: small;
+    font-weight: 600;
+    margin-left: 0;
+  }
+  
+  .info{
+    font-size: small;
+  }
+
+  .logoBlue{
+    width: 40%;
+  }
+
+  .grid_1-1-1{
+    display: unset;
+  }
+
+  .grid_1-1-1-1{
+    display: unset;
+  }
 }
   
 </style>

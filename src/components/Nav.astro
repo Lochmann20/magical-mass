@@ -1,19 +1,30 @@
 <header class="nav">
+  <div>
   <a class="logo" href="/">
     <img class="img" src="/CA_Logo_2021_vertikal_DK_RGB.png" alt="logo" />
   </a>
+  </div>
 
+  <div class="HøjreSideNav">
   <nav class="main-menu">
     <ul>
       <li class="medlemKanp"><a href="/">Bliv medlem</a></li>
-      <li><a href="/">Mit CA</a></li>
+    </ul>
+  </nav>
+
+  <nav class="MitCa">
+    <ul>
+        <li><a href="/">Mit CA</a></li>
       <!--<a class="hamburger" href="/">X</a>-->
     </ul>
   </nav>
 
+
   <button class="hamburger">
     <div class="bar"></div>
   </button>
+
+
 
   <nav class="open-menu">
     <ul>
@@ -23,31 +34,44 @@
       <li><a href="/">Selvstændig</a></li>
       <li><a href="/">Ledig</a></li>
       <li><a href="/">Efterløn</a></li>
-
-
     </ul>
   </nav>
+  </div>
+
 </header>
 
 <style>
-.main-menu{
-  margin-left: 25rem;
-}
+
   .img {
     width: 250px;
     margin-left: 5rem;
   }
 
+  div{
+    display: flex;
+  }
+
+  ul{
+    margin-right: 45px
+  }
+
+  .HøjreSideNav{
+    margin-right: 1em;
+  }
+
+  .MitCa{
+    margin-left: -2em;
+  }
+
   .nav {
-    display: flex; /* på linje med img*/
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-right: 5rem;
+    margin-top: 3rem;
   }
 
   .nav li {
     display: inline-block; /* på linje */
-    margin: 3rem;
+    margin-top: 2rem;
   }
   .nav a {
     text-decoration: none;
@@ -57,8 +81,8 @@
   .medlemKanp a {
     background-color: #054674;
     color: white;
-    padding: 1rem;
-    border-radius: 0.8rem;
+    padding: 10px;
+    border-radius: 50px;
   }
 
   .medlemKanp a:hover {
@@ -81,6 +105,9 @@
     background: none;
     outline: none;
     border: none;
+
+    margin-top: 0rem;
+    margin-right: 5em;
   }
 
   .hamburger .bar,
@@ -149,7 +176,52 @@
   .open-menu a:hover {
     transform: scale(1.1);
   }
+
+
+  @media screen and (max-width: 999px) {
+    .nav a{
+      font-size: 1rem;
+    }
+  }
+
+
+  @media screen and (max-width: 450px) {
+    .img{
+      width: 122px;
+      margin-left: 0;
+    }
+
+    .nav{
+      margin-top: 1rem;
+    }
+
+    ul{
+      margin-right: 10px;
+    }
+    
+    .nav a{
+      font-size: 0.9rem;
+    }
+
+    .nav li{
+      margin-top: 0;
+    }
+
+    .hamburger{
+      margin-right: -51px;
+      margin-left: 21px;
+      margin-top: -0.5rem;
+    }
+
+    .HøjreSideNav{
+      
+    }
+  }
 </style>
+
+
+
+
 
 <script>
   const menu_btn = document.querySelector(".hamburger");

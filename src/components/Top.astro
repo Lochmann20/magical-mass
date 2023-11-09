@@ -1,139 +1,70 @@
+<div class="grid_1-1">
+  <div class="gridItem_1">
+    <h1>Er der gået ged i din computer?</h1>
+    <h1>Vi står klar til at hjælpe dig</h1>
+    <div class="p">
+    <p>*CA tilbyder billig </p>
+    <p>elektronikdækning ved køb af </p>
+    <p>indboforsikring</p>
+    </div>
+  </div>
+  <img class="img" src="/screen.png" alt="logo"/>
+</div>
 
-<article class="grid_1-1">
-  <section class="gridItem_1">
-    <h1>
-      Er der gået ged i din computer? Vi står klar <br> til at hjælpe dig
-    </h1>
-    <p>*CA tilbyder billig elektronikdækning ved køb af indboforsikring</p>
-  </section>
 
-  <section class="gridItem_2">
-    <img class="img" src="/lcd-screen-with-cracked-glass-effect.jpg" alt="logo"/>
-  </section>
-</article>
 
+<!-- 
   <video width="320" height="240" autoplay>
     <source src="movie.mp4" type="video/mp4">
   </video>
-
-
-<article class="grid_1-1-1">
-  <div class="circle_1">
-    <h1>Indboforsikring </h1>
-    <h2>95 kr./md.*</h2>
-    <p>*Indboforsikring dækker dig og én sambo</p>
-  </div>
-
-  <div class="circle_2">
-    <h1>Cykel</h1>
-    <h2>25kr./md.*</h2>
-    <p>*Cykeldækning inkl. tyveri og hærværk - for dig og én sambo
-      -tilvalg til indboforsikring</p>
-  </div>
-
-  <div class="circle_3">
-    <h1>Elektronik</h1>
-    <h2>50kr./md.*</h2>
-    <p>*Elektronik dækker dig og én sambo
-      -tilvalg til indboforsikring</p>
-  </div>
-
-</article>
+-->
 
 
 <style>
   .grid_1-1{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      background-color: #0A79AE;
-      padding-top: 5rem;
-      padding-left: 5rem;
-      padding-right: 5rem;
-      padding-bottom: 4.5rem;
-      color: white;
-      margin: 9rem;
-      border-radius: 2rem;
-      
-  }
-  .grid_1-1-1 {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding-bottom: 4.5rem;
-    justify-content: space-evenly;
-    margin-top: -19rem;
+    text-align: center;
+    position: relative;
+    margin-top: 4em;
   }
 
-  .grid_1-1 h1{
-    font-size: 35px;
+  .gridItem_1{
+    position: absolute; 
+    left: 13%;
+    color: white;
+    font-size: 1rem;
+    gap: 16px;
+    text-align: start;
+    top: 1em;
   }
-  .grid_1-1 p{
-    padding-top: 40px;
+
+  h1{
+    font-size: 1.8rem;
+  }
+
+  .p{
+    font-size: 1.6rem;
+    margin-top: 2em;
+    line-height: 16px;
+  }
+  img{
+    width: 80%;
+    border-radius: 25px;
+  }
+
+
+  @media screen and (max-width: 999px){
+    h1{
+      font-size: 1.3rem;
+    }
+
+    .p{
+      font-size: 1.3rem;
+    } 
+  }
+
+  @media screen and (max-width: 450px){
    
   }
 
-
-  img{
-    width: 500px;
-    height: 300px;
-
-  }
-
-  .circle_1 {
-    width: 275px;
-    height: 275px;
-    line-height: 25px;
-    border-radius: 50%;
-    font-size: 10px;
-    color: #fff;
-    text-align: center;
-    background: #3F8367;    
-  }
-
-  .circle_1 h1 {
-    padding-top: 40px;
-    font-size: 20px;
-  }
-
-  .circle_1 h2 {
-    font-size: ;
-  }
-
-  .circle_2 {
-    width: 275px;
-    height: 275px;
-    line-height: 25px;
-    border-radius: 50%;
-    font-size: 10px;
-    color: #fff;
-    text-align: center;
-    background: #8C7300
-  }
-  .circle_2 h1 {
-    padding-top: 32px;
-    font-size: 20px;
-  }
- 
-  .circle_2 p {
-    padding: auto;
-  }
-
-  .circle_3 {
-    width: 275px;
-    height: 275px;
-    line-height: 25px;
-    border-radius: 50%;
-    font-size: 10px;
-    color: #fff;
-    text-align: center;
-    background: #D54141
-  }
-  .circle_3 h1 {
-    padding-top: 32px;
-    font-size: 20px;
-  }
-
-
-
-
 </style>
+

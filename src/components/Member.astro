@@ -1,4 +1,4 @@
-<h2>Dine medlemsfordele som studerende</h2>
+<h1>Dine medlemsfordele som studerende</h1>
 
 <article class="grid">
   <section class="gridItem">
@@ -24,8 +24,7 @@
     <h2 class="overskrift">Dagpenge som nyuddannet</h2>
     <p class="tekst">Modtag dagpenge som nyuddannet i op til et år.</p>
     <span>&#8594;</span>
-
-</section>
+  </section>
 
   <section class="gridItem">
     <h2 class="overskrift">Online foredrag og webinarer</h2>
@@ -34,7 +33,6 @@
       professionelle netværk.
     </p>
     <span>&#8594;</span>
-
   </section>
 
   <section class="gridItem">
@@ -43,7 +41,6 @@
       Lad vores eksperter hjælpe dig med at opnå et studiejob med en god løn.
     </p>
     <span>&#8594;</span>
-
   </section>
 
   <section class="gridItem">
@@ -53,43 +50,70 @@
       chancen for at blive indkaldt til en samtale.
     </p>
     <span>&#8594;</span>
-
   </section>
 </article>
 
+
 <style>
 
-h2{
-margin-left: 13.5rem;
-margin-bottom: -9rem;
-}
+  h1{
+    margin-left: 4em;
+  }
+
+  h2{
+    color: white;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 13.5rem;
-    color: #fff;
-
+    gap: 5em;
+    padding: 10em;
+    margin-top: -5em;
   }
 
   .gridItem {
     background-color: #054674;
-    margin: 0.5rem;
-    padding: 0rem;
-    width: 450px;
+    padding: 20px;
   }
 
   .overskrift {
-    margin: 2rem;
-    font-size: medium;
+
   }
 
   .tekst {
-    margin: 2rem;
-    font-size: small;
+    color: white;
+
   }
 
   span {
     content: "\2192";
-    margin: 25rem;
+    color: white;
+  }
+
+
+  @media screen and (max-width: 999px){
+    .grid{
+      gap: 2em;
+      padding: 7em;
+    }
+
+    h1{
+      margin-left: 3em;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .grid{
+      grid-template-columns: none;
+      gap: 2em;
+      padding: 2em;
+      margin-top: 1em;
+    }
+
+    h1{
+      margin-left: 1em;
+      font-size: 1.3rem;
+    }
+    
   }
 </style>

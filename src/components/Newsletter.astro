@@ -1,3 +1,14 @@
+<div class="grid_1-1">
+  <img class="img" src="/newsletter-copy.png" alt="logo" />
+  <div class="gridItem2">
+    <h2>Vil du være en del af CA’s nyhedsbrev?</h2>
+    <h3>Tilmeld dig her</h3>
+    <label class="form"><input type="email" name="email" /></label>
+  </div>
+</div>
+
+
+<!-- 
 <article class="grid_1-1">
   <section class="gridItem1">
     <img class="img" src="/ca_newsletter.jpeg" alt="logo" />
@@ -8,18 +19,17 @@
     <label class="form"> <input type="email" name="email" /></label>
   </section>
 </article>
+-->
 
 <style>
   .grid_1-1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(00px, 1fr));
-    margin-bottom: 5rem;
+    position: relative;
+    text-align: center;
   }
 
   img {
-    width: 100%;
-    border-radius: 2rem;
-
+    width: 80%;
+    border-radius: 25px;
   }
 
   .gridItem1{
@@ -27,15 +37,23 @@
   }
 
   .gridItem2 {
-    background-color: #ffffff;
-    border-radius: 2rem;
-    padding: 5rem;
-    margin-right: 15rem;
-    margin-left: 1rem;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    font-size: 1rem;
+    line-height: 38px;
+    text-align: start;
   }
 
   h2,
   h3 {
     color: black;
+  }
+
+  @media screen and (max-width: 999px) {
+    .gridItem2{
+      font-size: 0.7rem;
+    }
+    
   }
 </style>
