@@ -1,24 +1,12 @@
 <div class="grid_1-1">
   <div class="gridItem_1">
-    <h1>Er der gået ged i din computer?</h1>
-    <h1>Vi står klar til at hjælpe dig</h1>
-    <div class="p">
-    <p>*CA tilbyder billig </p>
-    <p>elektronikdækning ved køb af </p>
-    <p>indboforsikring</p>
-    </div>
+    <div>
+    <h1>Er der gået ged i din computer? <br> Vi står klar til at hjælpe dig </h1>
+    <h1>*CA tilbyder billig elektronikdækning <br>ved køb af indboforsikring</h1>
   </div>
-  <img class="img" src="/screen.png" alt="logo"/>
-</div>
-
-
-
-<!-- 
-  <video width="320" height="240" autoplay>
-    <source src="movie.mp4" type="video/mp4">
-  </video>
--->
-
+    <img class="img" src="/lcd-screen-with-cracked-glass-effect.jpg" alt="logo"/>
+  </div>
+<div>
 
 <style>
   .grid_1-1{
@@ -28,17 +16,21 @@
   }
 
   .gridItem_1{
-    position: absolute; 
+    position: relative;
     left: 13%;
     color: white;
     font-size: 1rem;
     gap: 16px;
     text-align: start;
-    top: 1em;
+    background-color: #0A79AE;
+    border-radius: 25px;
+    width: 73%;
+    display: flex;
   }
 
   h1{
     font-size: 1.8rem;
+    padding: 35px;
   }
 
   .p{
@@ -47,8 +39,9 @@
     line-height: 16px;
   }
   img{
-    width: 80%;
+    width: 50%;
     border-radius: 25px;
+    display: flex;
   }
 
 
@@ -63,7 +56,13 @@
   }
 
   @media screen and (max-width: 450px){
-   
+    img{
+      width: 100%;
+    }
+
+    .gridItem_1{
+      display: grid;
+    }
   }
 
 </style>

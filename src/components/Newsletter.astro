@@ -1,58 +1,80 @@
 <div class="grid_1-1">
-  <img class="img" src="/newsletter-copy.png" alt="logo" />
   <div class="gridItem2">
-    <h2>Vil du være en del af CA’s nyhedsbrev?</h2>
-    <h3>Tilmeld dig her</h3>
+    <img class="img" src="/ca_newsletter.jpeg" alt="logo" />
+    <div class="text">
+    <h2>Vil du være en del af CA’s <br> nyhedsbrev?</h2>
+    <h2>Tilmeld dig her</h2>
     <label class="form"><input type="email" name="email" /></label>
+  </div>
   </div>
 </div>
 
-
 <!-- 
-<article class="grid_1-1">
-  <section class="gridItem1">
-    <img class="img" src="/ca_newsletter.jpeg" alt="logo" />
-  </section>
-  <section class="gridItem2">
-    <h2>Vil du være en del af CA’s nyhedsbrev?</h2>
-    <h3>Tilmeld dig her</h3>
-    <label class="form"> <input type="email" name="email" /></label>
-  </section>
-</article>
+<div class="grid_1-1">
+  <div class="gridItem_1">
+    <h1>Er der gået ged i din computer? <br> Vi står klar til at hjælpe dig <br>*CA tilbyder billig elektronikdækning <br>ved køb af indboforsikring</h1>
+    <p></p>
+    <img class="img" src="/lcd-screen-with-cracked-glass-effect.jpg" alt="logo"/>
+  </div>
+<div>
 -->
+
 
 <style>
   .grid_1-1 {
-    position: relative;
     text-align: center;
+    position: relative;
+    margin-bottom: 8em;
   }
 
   img {
-    width: 80%;
+    width: 50%;
     border-radius: 25px;
+    display: flex;
   }
 
-  .gridItem1{
-    margin-left: 15rem;
-  }
 
   .gridItem2 {
-    position: absolute;
-    top: 10%;
-    left: 55%;
+    position: relative;
+    left: 13%;
+    color: white;
     font-size: 1rem;
-    line-height: 38px;
+    gap: 16px;
     text-align: start;
+    background-color: #00A5E5;
+    border-radius: 25px;
+    width: 73%;
+    display: flex;
+    gap: 80px;
   }
 
   h2,
   h3 {
-    color: black;
+    color: white;
+    margin-top: 2em;
+    line-height: 30px;
   }
 
   @media screen and (max-width: 999px) {
     .gridItem2{
       font-size: 0.7rem;
+    }
+    
+  }
+
+  @media screen and (max-width: 450px) {
+    .gridItem2{
+      font-size: 0.7rem;
+      display: grid;
+      gap: 10px;
+    }
+
+    img{
+      width: 100%;
+    }
+
+    .text{
+      padding: 20px;
     }
     
   }

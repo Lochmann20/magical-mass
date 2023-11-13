@@ -27,14 +27,47 @@
 
 
   <nav class="open-menu">
-    <ul>
-      <li><a href="/">I job</a></li>
-      <li><a href="/">Studerende</a></li>
-      <li><a href="/">Nyuddannet</a></li>
-      <li><a href="/">Selvstændig</a></li>
-      <li><a href="/">Ledig</a></li>
-      <li><a href="/">Efterløn</a></li>
-    </ul>
+    <div class="Forsikringer">
+      <a href="/"><strong>Forsikringer</strong></a>
+      <a href="" style="font-size: 1rem;">Advokathjælp</a>
+      <a href="" style="font-size: 1rem;">Lønsikring</a>
+      <a href="" style="font-size: 1rem;">A-kasse og dagpenge</a>
+    </div>
+
+    <div class="Udvikling">
+      <a href="/"><strong>Udvikling</strong></a>
+      <a href="/" style="font-size: 1rem;">Fagkurser</a>
+      <a href="" style="font-size: 1rem;">Gratis online kurser</a>
+      <a href="" style="font-size: 1rem;">Karrierrådgivning</a>
+      <a href="" style="font-size: 1rem;">webinarer</a>
+    </div>
+
+    <div class="MinSituation">
+      <a href="/"> <strong>Min situation</strong></a>
+      <a href="/" style="font-size: 1rem;">I job</a>
+      <a href="/" style="font-size: 1rem;">Studerende</a>
+      <a href="/" style="font-size: 1rem;">Nyuddannet</a>
+    </div>
+
+    <div class="Værktøjer">
+      <a href="/"><strong>Værktøjer</strong></a>
+      <a href="/" style="font-size: 1rem;">AI feedback CV <br>og ansøgning</a>
+      <a href="/" style="font-size: 1rem;">Løntjek</a>
+    </div>
+
+    <div class="OfteBrugt">
+      <a href="/"><strong>Ofte brugt</strong></a>
+      <a href="/" style="font-size: 1rem;">Dagpengesats</a>
+      <a href="/" style="font-size: 1rem;">Ferie og dagpenge</a>
+      <a href="/" style="font-size: 1rem;">Dagpengekort</a>
+    </div>
+    
+    <div class="Medlemskab">
+      <a href="/"><strong>Medlemskab</strong></a>
+      <a href="" style="font-size: 1rem;">Medlemsfordele</a>
+      <a href="" style="font-size: 1rem;">Rabataftaler</a>
+      <a href="" style="font-size: 1rem;">Bliv medlem</a>
+    </div>
   </nav>
   </div>
 
@@ -52,7 +85,8 @@
   }
 
   ul{
-    margin-right: 45px
+    margin-right: 45px;
+
   }
 
   .HøjreSideNav{
@@ -137,6 +171,17 @@
     opacity: 0;
   }
 
+  .Forsikringer,
+  .Udvikling,
+  .MinSituation,
+  .Værktøjer, 
+  .OfteBrugt,
+  .Medlemskab{
+    display: inline;
+  }
+
+
+
   .open-menu {
     position: fixed;
     top: 0; /* vigtig */
@@ -148,6 +193,8 @@
     background-color: #e6e6dfed;
     padding-top: 8rem; /* tesktens placering ift toppen */
     transition: 0.4s;
+    display: flex;
+    justify-content: space-evenly;
 
   }
 
@@ -215,6 +262,12 @@
 
     .HøjreSideNav{
       
+    }
+
+    .open-menu{
+      display: grid;
+      min-height: 49vh;
+      grid-template-columns: 1fr 1fr;
     }
   }
 </style>

@@ -1,15 +1,17 @@
 <article class="grid_1-1-1">
     <div class="circle_1">
-      <h1 class="text">Indboforsikring </h1>
-      <h2 class="text">95 kr./md.*</h2>
-      <p class="text">*Indboforsikring dækker dig og én sambo</p>
+      <h1 class="text1">Indboforsikring </h1>
+      <h2 class="text1">95 kr./md.*</h2>
+      <p class="text1">*Indboforsikring dækker dig og én sambo</p>
     </div>
   
     <div class="circle_2">
-      <h1 class="text2.1">Cykel</h1>
-      <h2 class="text2.1">25kr./md.*</h2>
-      <p class="text2.3">*Cykeldækning inkl. tyveri og hærværk - for dig og én sambo
+      <div class="text">
+      <h1>Cykel</h1>
+      <h2>25kr./md.*</h2>
+      <p>*Cykeldækning inkl. tyveri og hærværk - for dig og én sambo
         -tilvalg til indboforsikring</p>
+      </div>
     </div>
   
     <div class="circle_3">
@@ -23,33 +25,49 @@
 <style>
  .grid_1-1-1 {
     display: flex;
-    padding: 30px;
+    padding: 13%;
     text-align: center;
-    gap: 10px;
-    margin-bottom: 4.5rem;
-    margin-top: 5rem;
+    gap: 40px;  
+    margin-top: 2rem;
   }
 
-  .circle_1, .circle_2, .circle_3{
+  .circle_1{
     background-color: #3F8367;
+    border-radius: 50%;
+    color: white;
+    padding: 5.5rem;
+  }
+
+  .circle_2{
+    background-color: #8C7300;
+    padding: 3rem;
+    border-radius: 50%;
+    color: white;
+  }
+  .text{
+    margin-top: 4em;
+  }
+
+  .circle_3{
+    background-color: #D54141;
     padding: 5rem;
     border-radius: 50%;
     color: white;
   }
 
-  .circle_2{
-    background-color: #8C7300;
+@media screen and (max-width: 999px) {
+  .grid_1-1-1{
+    padding: 125px;
   }
-
-  .circle_3{
-    background-color: #D54141;
-  }
-
- 
+}
 
 @media screen and (max-width: 999px) {
     .circle_1, .circle_2, .circle_3{
         padding: 3rem;
+    }
+
+    .grid_1-1-1{
+      display: grid;
     }
     
 }
