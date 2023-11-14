@@ -1,8 +1,9 @@
 <div class="grid_1-1">
   <div class="gridItem_1">
-    <div>
-    <h1>Er der gået ged i din computer? <br> Vi står klar til at hjælpe dig </h1>
-    <p>*CA tilbyder billig elektronikdækning <br>ved køb af indboforsikring</p>
+    <div class="text">
+    <h1>Er der gået ged i din computer?</h1>
+    <h2>Vi står klar til at hjælpe dig </h2>
+    <p>*CA tilbyder billig elektronikdækning ved køb af indboforsikring</p>
   </div>
     <img class="img" src="computer_forside_billede.png" alt="logo"/>
   </div>
@@ -17,26 +18,30 @@
 
   .gridItem_1{
     position: relative;
-    left: 13%;
     color: white;
     font-size: 1rem;
-    gap: 16px;
+    gap: px;
     text-align: start;
     background-color: #0A79AE;
     border-radius: 25px;
-    width: 73%;
     display: flex;
   }
 
+  .text{
+    padding: 40px;
+  }
   h1{
+    font-size: 3rem;
+  }
+
+  h2{
+    margin-top: -20px;
     font-size: 1.8rem;
-    padding: 35px;
   }
 
   p{
-    font-size: 1.2rem;
-    padding: 35px;
-    margin-top: 6em;
+    font-size: 1rem;
+    margin-top: 5em;
   }
 
   .p{
@@ -47,8 +52,7 @@
   img{
     width: 40%;
     border-radius: 25px;
-    display: flex;
-    margin-left: 12em;
+    object-fit: cover;
   }
 
 

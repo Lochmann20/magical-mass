@@ -25,9 +25,10 @@ import Newsletter from "../components/Newsletter.astro";
   </head>
   <body>
     <Nav />
-    <slot />
-    <!-- slot er alt indhold fra pages -->
-    <Newsletter/>
+    <main>
+        <slot />
+      <Newsletter/>
+    </main>
       <Footer />
     </body>
 </html>

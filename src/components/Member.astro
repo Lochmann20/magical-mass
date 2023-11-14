@@ -56,19 +56,14 @@
 
 <style>
 
-  h1{
-    margin-left: 6em;
-  }
-
   h2{
     color: white;
   }
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 5em;
-    padding: 12em;
-    margin-top: -8em;
+    margin-bottom: 5em;
   }
 
   .gridItem {
@@ -92,10 +87,6 @@
 
 
   @media screen and (max-width: 999px){
-    .grid{
-      gap: 2em;
-      padding: 7em;
-    }
 
     h1{
       margin-left: 3em;
@@ -104,7 +95,6 @@
 
   @media screen and (max-width: 450px) {
     .grid{
-      grid-template-columns: none;
       gap: 2em;
       padding: 2em;
       margin-top: 1em;

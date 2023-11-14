@@ -3,6 +3,12 @@ body{
     margin: 0;
 }
 
+main{
+    max-width: 1000px;
+    width: 95vv;
+    margin-inline: auto;
+}
+
 h1, h2, h3, p{
     font-family: 'open sans';
 }
